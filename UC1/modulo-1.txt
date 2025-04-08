@@ -14,6 +14,22 @@ tecnologia
 
 prototico: cria um sistema para verificar se é usavel.
 
+//////////////////////////////////////////
+07/04/2025
+
+O que é um Briefing
+O briefing é um documento inicial que reúne informações.
+ajuda a entender o problema para que o sitema quer resolver
+
+.......................
+Elementos de um briefing:
+nome do sistema, objetivo, publico-alvo
+Funcionalidades principais, restrições, Diferenciais esperados
+
+
+.....................
+
+
 
 
 
