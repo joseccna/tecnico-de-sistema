@@ -41,6 +41,44 @@ valor estimado de 2,5 milhões
 
 ........................................
 
+processo de desenvolvimento de software
+
+levantame to de requisitos:
+
+objetivo: entender o que o cliente realmente precisa
+tecnicas: entrevistas, quistionarios observações reuinões.
+entregavais lista de requisitos funcionais e não funcionais.
+
+
+analise e projeto:
+
+objetivo: transforam os requisitos em soluções tecnicas.
+ferramentas: diagrams UML modelagem de dados fluxogramas.
+entregaveis: arquitetura do sistema, prototipos, diagramas de caso de uso.
+
+Implemetação (codificação):
+
+Objetivo: escrever o codigo-fonte do sistema com base nos projetos criados.
+
+Liguragens e tecnologias escolhidas: ex: Java, Python, React, SqL.
+
+Boas praticas: Versionamento (Git), padões de codig, testes durante o desenvolvimento.
+
+Testes:
+objetivo: verificar se o  sistema funciona corretamente e atende aos requisitos.
+Tipos: teste imotarops, teste de integração, testes funcionais, tstes
+
+
+
+Implataçao (Deploy):
+objetivo: colocar o sistema em produção disponivel para os usuários.
+pode envolver: omstaça
+
+Manutenção:
+objetivo: corrigir erros descobertos apos a entrega e implementa melhorias.
+tipos: corretiva, adaptativa, evolutiva, preventiva.
+
+
 
 
 
