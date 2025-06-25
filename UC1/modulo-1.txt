@@ -82,3 +82,4 @@ tipos: corretiva, adaptativa, evolutiva, preventiva.
 
 
 
+https://github.com/joseccna/tecnico-de-sistema/tree/5a4d7ba5ab5c1d6b3ee28e9d253cdd929adaeec5/UC5%20logica%20de%20programa%C3%A7%C3%A3o/exerc%C3%ADcios
