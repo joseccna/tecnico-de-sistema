@@ -4,15 +4,17 @@ programa {
     inteiro contador, f, n
 
     para(contador = 1; contador <= 10; contador++){
-      n = contador
-      enquanto(n > 1){
-        f = contador * n 
-        n--
+       se(contador % 2 != 0){
+        f = 1
+        n = contador
         
-
-      }
-      escreva("O valor do fatorial ", contador, " é ",f, "\n")
-
+        enquanto(n > 1){
+          f = f * n 
+          n--
+          
+        }
+      escreva("O valor do fatorial de ", contador, " é ",f, "\n")
+       }
 
     }
     
