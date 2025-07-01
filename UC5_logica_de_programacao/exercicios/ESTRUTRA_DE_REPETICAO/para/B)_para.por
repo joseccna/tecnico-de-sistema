@@ -7,10 +7,22 @@ programa {
     soma2 = 0
     para(contador = 1; contador <= 100; contador++){
 
-      soma2 = soma1 + contador
+      soma2 += soma1 + contador
 
     }
-    escreva("A soma total dos cem primeiros números inteiros ", (soma2+contador)-1 )
+    escreva("A soma total dos cem primeiros números inteiros ", (soma2) )
     
   }
 }
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 301; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
