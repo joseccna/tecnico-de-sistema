@@ -1,0 +1,29 @@
+criar tabela:
+CREATE TABLE Clientes (ID_cliente int NOT NULL AUTO_INCREMENT PRIMARY KEY, Nome_cliente varchar(255) not null);
+
+create TABLE Vendedores (ID_vendedores int not null AUTO_INCREMENT PRIMARY KEY, Nome_vendedor varchar(255) not null, cpf varchar(14) UNIQUE not null, loja varchar(100));
+
+CREATE TABLE produtos (ID_produto int not null AUTO_INCREMENT PRIMARY KEY, Nome_produto varchar(100) not null);
+
+create table Pedidos (ID_pedidos int not null AUTO_INCREMENT PRIMARY KEY, ID_cliente int, FOREIGN KEY(ID_cliente) REFERENCES clientes(ID_cliente), ID_vendedores int, FOREIGN KEY(ID_vendedores) REFERENCES vendedores(ID_vendedores), Quantidade int not null, ID_produto int , FOREIGN KEY(ID_produto) REFERENCES produtos(ID_produto));
+
+inserir:
+
+INSERT INTO clientes (ID_cliente, Nome_cliente ) VALUES(1,'João da Silva'),(2,'Maria Souza'),(3,'Ana Lima'),(4,'Gabriel');
+
+INSERT INTO vendedores (ID_vendedores, Nome_vendedor, cpf, loja) VALUES(1,'Carlas M.','123.456.789.-00','São Paulo'),(2,'Pedro N.','789.456.123-00','Rio');
+
+INSERT INTO produtos(ID_produto,Nome_produto) VALUES(1,'camiseta'),(2,'tenis'),(3,'mochila'),(4,'calça jeans'),(5,'bone');
+
+
+INSERT INTO pedidos (ID_pedidos, ID_cliente, ID_vendedores, Quantidade, ID_produto) VALUES (1,1,1,3,2),(2,3,2,4,1),(3,4,1,8,5),(4,2,1,7,3);
+
+
+Selecionar:
+
+
+SELECT * FROM clientes WHERE ID_cliente = 2;
+
+SELECT * FROM pedidos ORDER by Quantidade DESC;
+
+SELECT pedidos.ID_pedidos, clientes.Nome_cliente, vendedores.Nome_vendedor, produtos.Nome_produto,pedidos.Quantidade FROM pedidos JOIN clientes ON pedidos.ID_cliente = clientes.ID_cliente JOIN vendedores ON pedidos.ID_vendedores = vendedores.ID_vendedores JOIN produtos ON pedidos.ID_produto = produtos.ID_produto;
