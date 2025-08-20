@@ -1,0 +1,20 @@
+adicionar coluna na tabela cliente.
+ALTER  TABLE clientes ADD COLUMN email varchar(255);
+
+mudar o tipo do atributo.
+ALTER TABLE vendedores MODIFY COLUMN loja varchar(100);
+ALTER TABLE produtos  MODIFY COLUMN Nome_produto varchar(150);
+
+Deletar uma coluna da tabela cliente.
+ALTER TABLE clientes DROP COLUMN email;
+
+UPDATE
+update clientes set nome = 'Ana maria' where id = 1;
+
+Modificar o valor do atributo nome
+UPDATE clientes SET Nome_cliente = 'Joana Darc' WHERE ID_cliente = 1;
+
+Deletar(para deletar a informação não pode esta atrelado a outra tabela ou coluna).
+delete from cliente where id = 2; 
+
+DELETE FROM produtos WHERE ID_produto = 4;
