@@ -18,3 +18,17 @@ Deletar(para deletar a informação não pode esta atrelado a outra tabela ou co
 delete from cliente where id = 2; 
 
 DELETE FROM produtos WHERE ID_produto = 4;
+
+
+
+Criar chave estrangeira
+ FK_id_usuario int NOT null, FOREIGN KEY (FK_id_usuario) REFERENCES usuario(ID_usuario);
+
+
+Altera para chave estrangeira
+ALTER TABLE historico ADD CONSTRAINT FK_id_jogador FOREIGN KEY (FK_id_jogador) REFERENCES jogador(ID_jogador);
+
+
+
+ALTER TABLE historico ADD COLUMN FK_id_jogador int not null;
+ALTER TABLE historico ADD CONSTRAINT FK_id_jogador FOREIGN KEY (FK_id_jogador) REFERENCES jogador(ID_jogador);

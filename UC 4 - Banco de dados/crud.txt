@@ -1,0 +1,21 @@
+crud
+create table/database
+criar  tabela/banco de dados
+
+read select
+ler
+
+update     alter 
+atualizar  alterar
+
+delete   /drop
+apagar  /remover ou ocultar
+.....................................
+
+insert into
+inserir dado na nossa database
+
+
+cadastro precisa de insert
+
+

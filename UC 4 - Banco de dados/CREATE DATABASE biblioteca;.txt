@@ -1,0 +1,34 @@
+CREATE DATABASE biblioteca;
+USE biblioteca;
+
+CREATE TABLE usuario (ID_usuario int NOT null AUTO_INCREMENT PRIMARY KEY, Nome_usuario varchar(100) NOT null, Email_usuario varchar(100) UNIQUE NOT null);
+
+CREATE TABLE categoria (ID_categoria int NOT null AUTO_INCREMENT PRIMARY KEY, Nome_categoria varchar(100) UNIQUE NOT null);
+
+CREATE TABLE livro (ID_livro int not null AUTO_INCREMENT PRIMARY KEY, Titulo_livro varchar(150) not null, FK_id_categoria int NOT null,FOREIGN KEY (FK_id_categoria) REFERENCES categoria(ID_categoria));
+
+CREATE TABLE emprestimo (ID_emprestimo int not null AUTO_INCREMENT PRIMARY KEY, Data_emprestimo datetime NOT null, Data_devolucao datetime, FK_id_usuario int NOT null, FOREIGN KEY (FK_id_usuario) REFERENCES usuario(ID_usuario), FK_id_livro int NOT null, FOREIGN KEY (FK_id_livro) references livro(ID_livro));
+
+
+ALTER TABLE livro ADD COLUMN Disponivel_livro boolean DEFAULT true;
+ALTER TABLE livro MODIFY COLUMN Titulo_livro varchar(255);
+ALTER TABLE livro ADD COLUMN Sinopse_livro varchar(300);
+
+
+INSERT INTO usuario (ID_usuario, Nome_usuario, Email_usuario, Telefone_usuario) VALUES(1,'Joana Martins','joana.martins@email.com', '11988887777'),(2,'Lucas Pereira','lucas.pereira@email.com','11988887778'), (3,'Mariana Costa','mariana.costa@email.com','11988887779'),(4,'Rafael Lima','rafael.lima@email.com','11988887780'),(5,'Beatriz Alves','batriz.alves@gmail.com','11988887781'),(6,'Fernando Rocha','fernando.rocha@email.com','11988887782'),(7,'Camila Duarte','camila.duarte@eamil.com','11988887783');
+
+
+
+
+
+
+INSERT INTO livro (Titulo_livro,Sinopse_livro,Autor_livro,FK_id_categoria) VALUES ('A Menina que Roubava Livros','Durante a Segunda Guerra Mundial, uma jovem encontra consolo nos livros.','Markus Zusak',1),('O Hobbit','Bilbo Bolseiro embarca em uma jornada inesperada com anões para recuperar um tesouro.',' J.R.R.Tolkien',1),('Sapiens:Uma Breve História da Humanidade','Exploração da história da espécie humana desde os primórdios.','Yuval Noah Harari',2),('O Código Da Vinci','Misstério envolvendo símbolos religiosos e segredos históricos.','Dan Brown',1);
+
+
+
+
+
+
+
+
+

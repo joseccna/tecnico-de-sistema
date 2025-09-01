@@ -1,0 +1,6 @@
+CREATE DATABASE jogo;
+USE jogo;
+CREATE TABLE jogador (ID_jogador INT NOT null AUTO_INCREMENT PRIMARY KEY, Nome_jogador varchar(150) NOT null, Senha_jogador varchar(150) not null, Data_cadastro DATETIME, Nascimento DATE);
+CREATE TABLE favorito (ID_favorito INT NOT null AUTO_INCREMENT PRIMARY KEY, Data_cadastro_favorito DATETIME);
+CREATE TABLE historico (ID_historico INT NOT null AUTO_INCREMENT PRIMARY KEY, Data_jogo DATETIME, Historico_pontuacao INT);
+CREATE TABLE jogo (ID_jogo int NOT null AUTO_INCREMENT PRIMARY KEY, Nome_jogo varchar(150) NOT null, Lancamento_jogo YEAR NOT NULL);
