@@ -1,0 +1,9 @@
+create database if not exists sempre_rapido;
+use sempre_rapido;
+
+create table if not exists Cliente(
+id int not null auto_increment,
+nome varchar(100) not null,
+CPF varchar(20) not null unique,
+telefone varchar (20) not null
+);
