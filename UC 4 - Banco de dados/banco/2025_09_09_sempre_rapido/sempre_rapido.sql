@@ -5,8 +5,8 @@ use sempre_rapido;
 # Entidade principal
 create table if not exists Cliente(
 nome varchar(100) not null,
-CPF varchar(20) not null,
-telefone varchar (20) not null,
+CPF varchar(20) not null unique,
+telefone varchar (20) null, # neste campo permite nulo
 primary key(CPF)
 );
 
