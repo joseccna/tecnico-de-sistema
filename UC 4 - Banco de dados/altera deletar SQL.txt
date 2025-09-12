@@ -5,6 +5,12 @@ mudar o tipo do atributo.
 ALTER TABLE vendedores MODIFY COLUMN loja varchar(100);
 ALTER TABLE produtos  MODIFY COLUMN Nome_produto varchar(150);
 
+
+ALTER TABLE livro ADD COLUMN Disponivel_livro boolean DEFAULT true;
+ALTER TABLE livro MODIFY COLUMN Titulo_livro varchar(255);
+ALTER TABLE livro ADD COLUMN Sinopse_livro varchar(300);
+
+
 Deletar uma coluna da tabela cliente.
 ALTER TABLE clientes DROP COLUMN email;
 
@@ -24,6 +30,15 @@ DELETE FROM produtos WHERE ID_produto = 4;
 Criar chave estrangeira
  FK_id_usuario int NOT null, FOREIGN KEY (FK_id_usuario) REFERENCES usuario(ID_usuario);
 
+Criar chave estrangeira de outra maneira:
+create table if not exists Telefone(
+codCliente int not null, 
+telefone varchar(20) not null,
+tipoTelefone varchar(20) null,
+primary key(CodCliente, telefone),
+constraint fk_Telefone_cliente foreign key (codCliente) references Clinete (codCliente)
+ );
+.......................
 
 Altera para chave estrangeira
 ALTER TABLE historico ADD CONSTRAINT FK_id_jogador FOREIGN KEY (FK_id_jogador) REFERENCES jogador(ID_jogador);
