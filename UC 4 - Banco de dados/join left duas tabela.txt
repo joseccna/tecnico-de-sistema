@@ -1,0 +1,6 @@
+join left
+
+select vaga.localizacao, vaga.tipovaga, veiculo.placa
+from vaga
+left join registroestacionamento on registroestacionamento.vaga_id = vaga.id and registroestacionamento.datahorasaida is null
+left join veiculo on registroestacionamento.veiculo_id = veiculo.id;

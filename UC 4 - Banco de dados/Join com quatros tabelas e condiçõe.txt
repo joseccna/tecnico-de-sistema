@@ -1,0 +1,9 @@
+Join com quatros tabelas e condições de valor com apelido dos nomes das colunas
+
+select cliente.nome, veiculo.modelo, veiculo.placa, r.datahoraentrada, vaga.localizacao
+, r.datahorasaida, r.valorfinal 
+from registroestacionamento as r # as apelidar um nome da coluna.
+inner join veiculo on veiculo.id = r.veiculo_id
+inner join vaga on r.vaga_id = vaga.id
+inner join cliente on cliente.id = veiculo.cliente_id
+where datahorasaida is null;
