@@ -1,0 +1,31 @@
+CREATE DATABASE AgendaContato;
+GO
+
+USE AgendaContato;
+GO
+
+CREATE TABLE Contato(
+id INT IDENTITY(1,1) PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(150)NOT NULL,
+telefone VARCHAR(20) NULL
+);
+GO
+
+CREATE TABLE Endereco(
+id INT IDENTITY(1,1) PRIMARY KEY,
+Localizacao VARCHAR(200) NOT NULL,
+Referencia VARCHAR(150) NULL,
+Cidade VARCHAR(100) NOT NULL,
+Contato_id INT NOT NULL,
+CONSTRAINT FK_Endereco_Contato	FOREIGN KEY (Contato_id) REFERENCES Contato (id)
+);
+GO
+
+
+
+INSERT INTO Endereco (Localizacao, Referencia, Cidade, Contato_id) VALUES
+('Rua das Flores, 123 - Centro', 'Próximo à praça principal', 'São Paulo', 1),
+('Avenida Brasil, 456 - Bairro Novo', 'Em frente ao supermercado Bom Preço', 'Rio de Janeiro', 2),
+('Rua das Palmeiras, 789 - Zona Norte', 'Perto da estação de metrô Jardim', 'Belo Horizonte', 3);
+GO
