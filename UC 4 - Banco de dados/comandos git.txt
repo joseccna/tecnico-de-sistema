@@ -1,0 +1,169 @@
+O git por ser um versionamento precisa saber quem é o usuário que esta utilizando.
+
+configura o nome no git:
+
+C:\>git config --global user.name "Jose Fernando"
+
+sobre escreve o nome na maquina se caso já estiver um nome cadastrado
+......................
+configura o e-mail no git:
+
+C:\>git config --global user.email jose.ccna@gmail.com
+
+
+
+......................
+iniciar o git
+
+git init
+
+......................
+mostra o estatos do git
+git status
+
+........................
+
+ver em qual branch estamos:
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch
+* master
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+........................
+
+Criando uma nova branch:
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch preparo-instantaneo
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch
+* master
+  preparo-instantaneo
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+...........................
+
+Mudando de branch:
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git checkout preparo-instantaneo
+Switched to branch 'preparo-instantaneo'
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch
+  master
+* preparo-instantaneo
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+.............................
+
+Mostra as mudanças de branch
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git checkout master
+Switched to branch 'master'
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch
+* master
+  preparo-instantaneo
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch preparo-2
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch
+* master
+  preparo-2
+  preparo-instantaneo
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git checkout preparo-2
+Switched to branch 'preparo-2'
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+..................................................
+
+Histórico das branch
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git log --oneline
+85fcaa0 (HEAD -> preparo-2) Assando o pudim
+d5e5c96 Atualização do mode de preparo
+90fe1f4 Mistura de ingredientes ok
+d9608dc (master) Incredientes completos
+f25b731 Primeiros ingredientes
+bc7949a Iniciando a receita
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+
+.....................................
+
+Levar a branch preparo-2 para linha principal para branch master
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git checkout master
+Switched to branch 'master'
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch
+* master
+  preparo-2
+  preparo-instantaneo
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git log --oneline
+d9608dc (HEAD -> master) Incredientes completos
+f25b731 Primeiros ingredientes
+bc7949a Iniciando a receita
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git merge preparo-2
+Updating d9608dc..85fcaa0
+Fast-forward
+ Pudim.txt | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+C:\Users\jose.fncarvalho1\Documents\Receitas>git log --oneline
+85fcaa0 (HEAD -> master, preparo-2) Assando o pudim
+d5e5c96 Atualização do mode de preparo
+90fe1f4 Mistura de ingredientes ok
+d9608dc Incredientes completos
+f25b731 Primeiros ingredientes
+bc7949a Iniciando a receita
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+
+............................................
+
+Deletar o branch 
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch -D preparo-instantaneo
+Deleted branch preparo-instantaneo (was 0d251d6).
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>git branch
+* master
+  preparo-2
+
+C:\Users\jose.fncarvalho1\Documents\Receitas>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
