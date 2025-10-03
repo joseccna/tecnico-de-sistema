@@ -1,0 +1,22 @@
+{"produrtos" :
+    [
+      {"id": 1,
+        "nome": "Camiseta",
+        "preco": 29.99,
+        "estoque": 100 },
+       {"id": 2,
+        "nome": "Tênis",
+        "preco": 199.99,
+        "estoque": 50 },
+       {"id": 3,
+        "nome": "Relógio",
+        "preco": 149.99,
+        "estoque": 30 }
+    ],
+ "categorias" :
+    [
+        {"id" : 1 ,"categoria" :"Roupas"},
+        {"id" : 2 ,"categoria" :"Calçados"},
+        {"id" : 3 ,"categoria" :"Acessórios"}
+    ]
+}
