@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Lava-Louças",
+    "preco": 1999.00,
+    "descricao": "Lava-louças 8 serviços Inox",
+    "disponivel": true,
+    "categoria": ["eletrodomésticos", "cozinha"],
+    "detalhes": {
+      "peso": "23,5 Kg",
+      "voltagem": "220v",
+      "cor": "inox"
+    }
+  },
+  {
+    "nome": "lava-roupas e secadora",
+    "preco": 3499.00,
+    "descricao": "lava-roupas e secadora 11kg",
+    "disponivel": true,
+    "categoria": ["eletrodomésticos", "lavanderia"],
+    "detalhes": {
+      "peso": "70 Kg",
+      "voltagem": "220v",
+      "cor": "branco"
+    }
+  }
+]
