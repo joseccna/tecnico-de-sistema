@@ -1,0 +1,10 @@
+Exemplo para nova branch:
+
+
+git checkout -b implementacao-auteracao-senha
+
+git add .
+
+git commit -m "implementação do serviço de alteração de senha com a separação de responsabilidade do serviço criado na pasta DTO o arquivo AlterarSenhaDTO.cs e na pasta Response o arquivo ResponseAlteraSenha.cs"
+
+git push -u origin implementacao-auteracao-senha
