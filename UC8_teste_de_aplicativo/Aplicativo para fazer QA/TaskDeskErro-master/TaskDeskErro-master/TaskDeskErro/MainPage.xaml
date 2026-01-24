@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TaskDeskErro.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="TaskDesk - Gerenciador de Tarefas">
+    
+    <ContentPage.Content>
+        <ScrollView>
+        <VerticalStackLayout
+            Padding="24"
+            Spacing="16">
+
+            <Label
+                Text="TaskDesk - Gerenciador de Tarefas"
+                FontSize="24"
+                HorizontalOptions="Center"
+                FontAttributes="Bold" />
+
+            <Entry
+                x:Name="TitleEntry"
+                Placeholder="Título da tarefa" />
+
+            <Editor
+                x:Name="DescriptionEditor"
+                Placeholder="Descrição da tarefa"
+                AutoSize="TextChanges"
+                HeightRequest="80" />
+
+            <Picker
+                x:Name="PriorityPicker"
+                Title="Selecione a prioridade">
+                <Picker.Items>
+                    <x:String>Baixa</x:String>
+                    <x:String>Média</x:String>
+                    <x:String>Alta</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button
+                Text="Adicionar tarefa"
+                Clicked="OnAddTaskClicked" />
+
+            <Label
+                Text="Tarefas cadastradas"
+                FontAttributes="Bold"
+                Margin="0,16,0,0" />
+
+            <CollectionView
+                x:Name="TasksCollectionView"
+                ItemsSource="{Binding Tasks}">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Margin="0,4"
+                            Padding="8"
+                            HasShadow="False"
+                            BorderColor="LightGray"
+                            CornerRadius="8">
+
+                            <Grid
+                                ColumnDefinitions="*,Auto"
+                                RowDefinitions="Auto,Auto,Auto">
+
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Text="{Binding Title}"
+                                    FontAttributes="Bold"
+                                    LineBreakMode="TailTruncation" />
+
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Text="{Binding Priority}"
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="End" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.ColumnSpan="2"
+                                    Text="{Binding Description}"
+                                    FontSize="12" />
+
+                                <HorizontalStackLayout
+                                    Grid.Row="2"
+                                    Grid.ColumnSpan="2"
+                                    Spacing="8"
+                                    Margin="0,4,0,0">
+
+                                    <Label
+                                        Text="{Binding StatusText}"
+                                        FontAttributes="Italic"
+                                        FontSize="12" />
+
+                                    <Button
+                                        Text="Concluir"
+                                        FontSize="12"
+                                        Padding="8,4"
+                                        Clicked="OnCompleteTaskClicked"
+                                        CommandParameter="{Binding .}" />
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>        
+    </ContentPage.Content>
+    
+</ContentPage>
