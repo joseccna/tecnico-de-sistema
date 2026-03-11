@@ -1,0 +1,15 @@
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\bin\Debug\net8.0\Byte.exe
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\bin\Debug\net8.0\Byte.deps.json
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\bin\Debug\net8.0\Byte.runtimeconfig.json
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\bin\Debug\net8.0\Byte.dll
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\bin\Debug\net8.0\Byte.pdb
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.AssemblyInfoInputs.cache
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.AssemblyInfo.cs
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.csproj.CoreCompileInputs.cache
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.sourcelink.json
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.dll
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\refint\Byte.dll
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.pdb
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\Byte.genruntimeconfig.cache
+C:\Users\jose.fncarvalho1\Documents\curso\tecnico-de-sistema\UC8_teste_de_aplicativo\Atividade\Byte\Byte\Byte\obj\Debug\net8.0\ref\Byte.dll
