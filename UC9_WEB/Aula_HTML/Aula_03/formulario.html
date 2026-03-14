@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário HTML</title>
+  </head>
+  <body>
+    <form action="/processar_formulario" method="" autocomplete="on">
+      <!--Compo de texto para inserção de dados-->
+
+      <label for="nome">Nome :</label>
+      <input required type="text" id="nome" name="nome" />
+      <br />
+
+      <label for="email">Email :</label>
+      <input
+        required
+        type="email"
+        name="email"
+        id="email"
+        placeholder="EX:jose@teste.com.br"
+      />
+      <br />
+
+      <label for="tel">Telefone:</label>
+      <input
+        type="tel"
+        inputmode="numeric"
+        name="tel"
+        id="tel"
+        placeholder="(xx) xxxxx-xxxx"
+      />
+
+      <br />
+      <label for="idade">Idade :</label>
+      <input type="number" name="idade" id="idade" placeholder="EX: 25" />
+      <br />
+
+      <label for="nascimento">Data de Nascimento :</label>
+      <input type="date" name="nascimento" id="nascimento" />
+      <br />
+
+      <label for="horario">Horário :</label>
+      <input type="time" name="horario" id="horario" />
+      <br />
+
+      <label for="color">Cor :</label>
+      <input type="color" name="color" id="color" />
+
+      <br />
+
+      <label for="range">Range :</label>
+      <input
+        oninput="this.nextElementSibling.textContent = this.value"
+        type="range"
+        min="0"
+        max="100"
+        value="25"
+        name="range"
+        id="range"
+      />
+      <span id="rangeValue">25</span>
+      <br />
+      <br />
+      <!--Campo para upload de arquivos permitido somente imagens-->
+      <label for="file">Arquivo :</label>
+      <input type="file" accept="image/*" name="file" id="file" />
+      <br />
+      <br />
+
+      <label for="senha">Senha :</label>
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="Digite sua senha"
+      />
+      <br /><br />
+
+      <input type="checkbox" name="termos" id="termos" />
+      <label for="termos">Aceito os termos e condições</label>
+
+      <br /><br />
+
+      <input type="radio" name="genereno" id="masculino" value="masculino" />
+      <label for="masculino">Masculino</label>
+
+      <input type="radio" name="genereno" id="feminino" value="feminino" />
+      <label for="feminino">Feminino</label>
+
+      <br />
+      <br />
+      <input type="submit" value="Enviar" />
+      <br /><br />
+
+      <label for="cidade">Cidade:</label>
+      <select name="cidade" id="cidade">
+        <option value="saopaulo">São Paulo</option>
+        <option value="riodejaneiro">Rio de Janeiro</option>
+        <option value="campinas">Campinas</option>
+        <option value="brasilia">Brasília</option>
+      </select>
+
+      <br /><br />
+      <label for="linguagens">Linguagens de Programação:</label>
+      <select name="linguagens" id="linguagens" multiple size="5">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="csharp">C#</option>
+        <option value="ruby">Ruby</option>
+      </select>
+
+      <br /><br />
+      <label for="mensagem">mensagem</label><br />
+      <textarea name="mensagem" id="mensagem" rows="3"></textarea>
+
+      <br /><br />
+
+      <input
+        list="navegadores"
+        name="navegador"
+        id="navegador"
+        placeholder="Escolha um navegador"
+      />
+      <datalist id="navegadores">
+        <option value="Google Chrome"></option>
+        <option value="Mozilla Firefox"></option>
+        <option value="Microsoft Edge"></option>
+        <option value="Safari"></option>
+        <option value="Opera"></option>
+      </datalist>
+
+      <br /><br />
+
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="Nome">Nome:</label>
+        <input type="text" id="Nome" name="Nome" />
+        <br /><br />
+
+        <label for="Nome">Email:</label>
+        <input type="text" id="email" name="email" />
+        <br />
+      </fieldset>
+      <br /><br />
+
+      <input type="button" value="botao" onclick="alert('Botão clicado!')" />
+    </form>
+  </body>
+</html>
