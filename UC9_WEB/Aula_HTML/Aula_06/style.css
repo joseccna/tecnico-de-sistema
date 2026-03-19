@@ -1,0 +1,127 @@
+/* Reset básico:
+   Remove margens/paddings padrão e melhora o controle de layout */
+*{
+    box-sizing: border-box; /* inclui padding e border no tamanho total */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral da página */
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2); /* fundo com gradiente */
+    font-family: Arial, sans-serif; /* fonte padrão */
+}
+
+/* Container principal:
+   Centraliza o card na tela usando Flexbox */
+.container{
+    height: 100vh; /* ocupa toda altura da tela */
+
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
+}
+
+/* Card:
+   Estrutura principal do conteúdo */
+.card{
+    width: 300px;
+    background: #f2f2f2;
+    border-radius: 10px; /* cantos arredondados */
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* sombra suave */
+
+    display: flex;
+    flex-direction: column; /* organiza itens em coluna */
+    align-items: center;    /* centraliza horizontalmente */
+
+    text-align: center;
+    padding: 30px;
+}
+
+/* Avatar:
+   Círculo com iniciais do usuário */
+.avatar{
+    width: 80px;
+    height: 80px;
+
+    background: #667eea;
+    color: #f2f2f2;
+
+    border-radius: 50%; /* deixa redondo */
+
+    margin-bottom: 15px;
+    font-size: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centraliza texto dentro do círculo */
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border: 2px solid #f2f2f2; /* borda branca ao redor */
+}
+
+/* Nome */
+h2{
+    margin: 5px 0;
+}
+
+/* Cargo / profissão */
+.cargo{
+    color: #5a7df0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Descrição / bio */
+.descricao{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5; /* melhora leitura */
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Lista de habilidades (Flexbox) */
+.skills{
+    display: flex;
+    flex-wrap: wrap;         /* quebra linha automaticamente */
+    justify-content: center; /* centraliza os itens */
+    gap: 10px;               /* espaço entre os itens */
+
+    margin: 10px 0 20px;
+}
+
+/* Cada skill (badge) */
+.skills span{
+    background: #ddd;
+    color: #5a7df0;
+
+    padding: 5px 10px;
+    border-radius: 20px; /* formato de “pill” */
+
+    font-size: 12px;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Botão */
+button{
+    border: none;
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #f2f2f2;
+
+    cursor: pointer;
+    font-weight: bolder;
+
+    transition: 0.3s; /* animação suave */
+}
+
+/* Efeito hover */
+button:hover{
+    opacity: 0.85; /* leve transparência ao passar o mouse */
+}

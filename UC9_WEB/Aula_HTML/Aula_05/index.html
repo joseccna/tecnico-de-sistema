@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Modelo de Página</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background-color: #dcdcdc;
+  margin: 0;
+}
+
+.container{
+  width: 90%;
+  margin: 20px auto;
+}
+
+h1{
+  margin-bottom: 5px;
+}
+
+hr{
+  margin-bottom: 20px;
+}
+
+/* MENU */
+.menu{
+  margin-bottom: 20px;
+}
+
+.menu button{
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu button:hover{
+  background-color: #495057;
+}
+
+/* GRID */
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* CARD */
+.card{
+  background-color: white;
+  width: 30%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+.card img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3{
+  margin: 10px 0 5px;
+}
+
+.card p{
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>Modelo de página</h1>
+  <hr>
+
+  <p><strong>Página de teste</strong></p>
+
+  <div class="menu">
+    <button>Carros</button>
+    <button>Pessoas</button>
+    <button>Frutas</button>
+  </div>
+
+  <div class="grid">
+
+    <!-- CARROS -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="">
+      <h3>Carros antigos</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="">
+      <h3>Carro novo</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="">
+      <h3>Carros populares</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <!-- FRUTAS -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1574226516831-e1dff420e37b" alt="">
+      <h3>Frutas cítricas</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea" alt="">
+      <h3>Frutas vermelhas</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a" alt="">
+      <h3>Frutas verdes</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <!-- PESSOAS -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+      <h3>Adultos</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9" alt="">
+      <h3>Crianças</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300" alt="">
+      <h3>Idosos</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
