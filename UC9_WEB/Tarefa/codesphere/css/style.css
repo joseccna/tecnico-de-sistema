@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a1931;
+    padding: 10px 20px;
+
+}
+.grupo-esquerda{
+    display: flex;
+    padding-right: 40px;
+}
+.grupo-direita{
+    display: flex;
+  
+}
+.btn-cadastrar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0a1931;
+    padding-right: 10px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.nome{
+    width: 200px;
+    height: 50px;
+}
+.office{
+    width: 400px;
+    height: 400px;
+}
+.linha{
+    width: 50px;
+    height: 50px;
+}
