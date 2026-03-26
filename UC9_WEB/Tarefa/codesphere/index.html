@@ -1,70 +1,126 @@
-<!DOCTYPE html>
-<html lang="tp-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeSphere</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Cabecalho -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
     <header>
-        <nav >
+      <nav class="menu">
+        <div class="logo-area">
+          <img class="logo" src="img/icon04.jpg" alt="Logo CodeSphere" />
+          <img class="nome" src="img/logo.png" alt="Nome CodeSphere" />
+        </div>
 
-            <div class="menu">
-            <section>
-                <article class="grupo-esquerda">
-                    <img class="logo" src="img/icon04.jpg" alt="Logo CodeSphere">
-                    <img class="nome" src="img/logo.png" alt="nome CodeSphere">
-                </article>
-            </section>
-            <section>
-                <article class="grupo-direita">
-                    <img class="linha" src="img/burger-bar.png" alt="menu">
-                </article>
-            </section>
-            </div>
+        <div class="menu-icon">
+          <img class="linha" src="img/burger-bar.png" alt="Menu" />
+        </div>
 
-            <div class="btn-cadastrar">
-                <button>Cadastrar-se</button>
-
-            </div>
-  
-        </nav>
-
+        <div class="btn-area">
+          <button>Cadastrar-se</button>
+        </div>
+      </nav>
     </header>
-    <!-- Conteudo -->
+
+    <!-- MAIN -->
     <main>
-        <!-- Primeira sessao -->
-        <section>
-            <div>
-               <h2>Seu Caminho para o Domínio da Web Começa Aqui</h2> 
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <article class="hero-texto">
+            <h1>Seu Caminho para o Domínio da Web Começa Aqui</h1>
+
+            <p>
+              Aprenda HTML5, CSS3 e JavaScript do zero com projetos práticos e
+              orientação de especialistas.
+            </p>
+
+            <div class="hero-botoes">
+              <button class="btn-primary">Começar agora</button>
+              <button class="btn-secondary">Saiba mais</button>
             </div>
-                <div>
-                <p>Aprenda HTML5, CSS3 e JavaScript do zero com projetos práticos e orintação de especialistas.</p>
-                </div>
+          </article>
 
-                <div>
-                    <button>Começar agora</button>
-                    <button>Saiba mais</button>
-                </div>
-                <div>
-                    <figure>
-                        <img class="office" src="img/office.png" alt="ilustrativa de programação">
-                    </figure>
+          <figure class="hero-img">
+            <img
+              class="office"
+              src="img/office.png"
+              alt="Pessoa programando no computador"
+            />
+          </figure>
+        </div>
+      </section>
 
+      <!-- BENEFÍCIOS -->
+      <section class="beneficios">
+        <h2>Por que CodeSphere?</h2>
+        <div>
+          <article>
+            <img src="img/icon01.png" alt="Icone de aprendizado" />
+            <h3>Cursos Liderados por Especialistas</h3>
+            <p>Projetos práticos e tutoriais.</p>
+          </article>
 
+          <article>
+            <img src="img/icon02.png" alt="Icone de mentoria" />
+            <h3>Mentores de Apoio</h3>
+            <p>Feedkack pessoal de especialistas da indústria.</p>
+          </article>
+          <article>
+            <img src="img/icon03.png" alt="Icone profissional" />
+            <h3>Prontidão Profissional</h3>
+            <p>Construa um portfólio que te contrate.</p>
+          </article>
+        </div>
+      </section>
 
-                </div>
-          
+      <!-- DEPOIMENTO -->
+      <section class="depoimento">
+        <h2>O Que Dizem os Alunos</h2>
 
-        </section>
+        <article class="card-depoimento">
+          <figure>
+            <img src="img/user.png" alt="Foto de Sarah Jones" />
+            <figcaption>
+              <strong>Sarah Jones</strong><br />
+              Desenvolvedora Júnior
+            </figcaption>
+          </figure>
 
+          <p>
+            "A CodeSphere me deu as habilidades para conseguir o emprego dos
+            meus sonhos! Altamente recomendada."
+          </p>
+        </article>
+      </section>
     </main>
 
+    <!-- FOOTER -->
+    <footer>
+      <section class="footer-top">
+        <h2>CodeSphere</h2>
 
+        <nav>
+          <ul>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
 
+        <div class="social">
+          <img src="img/iconFacebook.png" alt="Facebook" />
+          <img src="img/iconInstagram.png" alt="Twitter" />
+          <img src="img/iconLinkedin.png" alt="LinkedIn" />
+          <img src="img/iconTwitter.png" alt="Instagram" />
+        </div>
+      </section>
 
-    
-</body>
+      <p>© 2026 CodeSphere. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
