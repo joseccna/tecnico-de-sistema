@@ -3,29 +3,79 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+  --cor-primaria: #1e3a8a;
+  --cor-secundaria: #3b82f6;
+  --cor-destaque: #f97316;
+  --cor-fundo: #f3f4f6;
+  --cor-texto: #111827;
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0a1931;
-    padding: 10px 20px;
-
+  --fonte: Arial, sans-serif;
 }
+
+body {
+  font-family: var(--fonte);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+/* HEADER */
+
+
+.menu {
+  background-color: var(--cor-primaria);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-area{
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.logo {
+  width: 30px;
+}
+.nome {
+  width: 120px;
+}
+
+.menu-icon img {
+  width: 25px;
+}
+
+.btn-area button {
+  background-color: var(--cor-destaque);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
 .grupo-esquerda{
     display: flex;
     padding-right: 40px;
 }
 .grupo-direita{
+
     display: flex;
+    justify-content:space-between ;
+    align-items: end;
+    
   
+
 }
-.btn-cadastrar{
-    display: flex;
-    justify-content: flex-end;
-    background-color: #0a1931;
-    padding-right: 10px;
-}
+
+
 
 .logo{
     width: 50px;
@@ -42,4 +92,229 @@
 .linha{
     width: 50px;
     height: 50px;
+}
+
+/* HERO */
+.hero {
+  padding: 20px;
+  background-color:  #3b82f6;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-texto h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-texto p {
+  margin-bottom: 15px;
+}
+
+.hero-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-primary {
+  background-color: var(--cor-destaque);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+
+
+}
+
+.beneficios h2{
+    margin-bottom: 20px;
+}
+.beneficios div{
+    display :flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.beneficios article{
+    background: white;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2); /* sombra suave */
+
+}
+
+.beneficios img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+  
+/* DEPOIMENTO */
+
+.depoimento{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.depoimento h2{
+    margin-bottom: 10px;
+}
+
+.card-depoimento{
+    background: var(--cor-fundo);
+    gap: 20px;
+    border-radius: 10px;
+
+}
+.card-depoimento img{
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.depoimento figure{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer-top{
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.primeira-linha{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.footer-top ul li a{
+    text-decoration: none;
+    color: white;
+}
+.segunda-linha{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.social img{
+    width: 40px;
+    filter: brightness(0) invert(1);
+}
+
+.social img:hover{
+    opacity: 1;
+}
+
+.footer-bottom{
+    background-color: var(--cor-primaria);
+    text-align: center;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+@media ( min-width: 768px) {
+
+    /*HEADER*/
+    .btn-area button{
+        font-size: 20px;
+    }
+
+
+    /*HERO*/
+    .container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-texto{
+        flex: 1;
+        font-size: 25px;
+    }
+
+    .hero-img{
+        flex: 1;
+        }
+    .hero-botoes button{
+        font-size: 25px;
+    }
+
+    /*BENEFÍCIOS*/
+    .beneficios div{
+        flex-direction: row;
+    }
+    .beneficios article{
+        flex: 1;
+    }
+
+    /*NAVBAR melhor organizada*/
+    .menu{
+        padding: 20px 40px;
+
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+    .linha{
+        width: 70px;
+        height: 70px;
+    }
+    .nome{
+        width: 300px;
+        height: 70px;
+    }
+  
+
+
+    
+
 }
