@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function escreverNoConsole(){
+            console.log('fazendo algo no console!');
+        }
+        function soma(x , y){
+            let resultado = x + y;
+            //exibir no alert
+            //alert('O resultado é: ' + resultado);
+
+
+            //Template String
+            alert(`O resultado é: ${resultado}`);
+            console.log(resultado);
+            
+        }
+    </script>
+
+</head>
+<body>
+    <!--Utilização do JS Inline (não reconmendado)-->
+    <button onclick="alert('Clicou!')">Clique aqui</button>
+
+    <button onclick="console.log('escrever no console!')">Clique no console</button>
+
+    <button onclick="escreverNoConsole()">Execultar função</button>
+    
+    <button onclick="soma(10, 9)">Somar dois numeros</button>
+    
+
+    <script>
+        //Utilização do JS externo, escrendo no console
+        console.log('Ola, Jose');
+        //chamar função escrever no console
+        escreverNoConsole();
+        //chamar função somar
+        soma(5, 3);
+
+    </script>
+</body>
+</html>

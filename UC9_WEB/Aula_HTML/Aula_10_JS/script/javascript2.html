@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="prt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script>
+      //Utilização do console.log();
+      /*
+
+        var x = "varlo da variavel";
+        console.log('Ola, Jose!');
+        console.log(200);
+        console.log(40+50);
+        console.log(x);
+        console.log('Ola,', x);
+        console.log('Ola, ' + x);
+        console.log(`Ola, ${x}`);
+
+        */
+
+      // variaveis e tipos de dados em javascript
+      /*
+        var idade = 18;
+        let idade2 = 20;
+        const nome = "Jose";
+
+        console.log(nome,idade2);
+        idade2++;
+        idade2++;
+        console.log("Nome: ",nome, idade2);
+
+        let texto = "isso é um novo texto"
+        let numeroInteiro = 10;
+        let nomeroDecimal = 10.5;
+        let estaChovendo = true; //true ou false booleano
+
+        console.log(`O meu nome é ${nome} e minha idade é ${idade2}`); // Template String `nome,idade2`);
+
+        console.log(typeof idade2);
+        console.log(typeof nome);
+        console.log(typeof texto);
+        console.log(typeof numeroInteiro);
+        console.log(typeof nomeroDecimal);
+        console.log(typeof estaChovendo);
+         */
+
+      //Funções (com paremetros e retorno)
+      /*
+
+         function saudacao(){ // Função sem parâmetros
+            console.log('Ola, Jose!');
+            console.log('Hoje é dia 23 de abril de 2026')
+            console.log('Ontem foi dia 22 de abril de 2026');
+         }
+
+         saudacao();
+
+         console.log('');
+
+                  function saudacao2(nome,dia){ // Função com parâmetros
+            console.log('Ola,', nome);
+            console.log('Hoje é dia ',dia);
+            dia--;
+            if(dia == 0){
+                dia = 31;
+            }
+            console.log('Ontem foi dia ',dia);
+         }
+         */
+
+      //saudacao2('Jose',1);
+
+      function soma(a, b) {
+        return a + b;
+      }
+      let resultado = soma(10, 20);
+      console.log(resultado);
+
+      console.log(soma(10, 20));
+
+      // Atividasde rapida
+
+      // coma a variavel nota , diga se o aluno foi aprovado ou reprovado
+      // caso seja reprovado, informe o quanto faltou para ser aprovado media 7
+      let nota = 5;
+      const media = 7;
+
+      if (nota <= media) console.log("Aprovado!");
+      else {
+        console.log("Reprovado!");
+        console.log("faltaram " + (media - nota) + " pontos");
+      }
+    </script>
+  </body>
+</html>
