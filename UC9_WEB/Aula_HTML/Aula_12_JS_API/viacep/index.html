@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Consumo de API ViaCep</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Consulta de CEP</h1>
+
+      <!-- Formulário para entrada do CEP -->
+       <div class="grupo-entrada-cep">
+      <label for="cep">CEP:</label>
+      <input type="text" name="cep" id="cep" placeholder="Digite o CEP" maxlength="8" />
+      <button id="btnBuscar">Buscar</button>
+      </div>
+
+    <!-- Campos prenchidos pela API -->
+     <div class="grupo-campos">
+      <label for="logradouro">logradouro:</label>
+      <input type="text" id="logradouro" readonly>
+      </div>
+
+      <div class="grupo-campos">
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" readonly>
+      </div>
+
+      <div class="linha-dois-campos">
+      <div class="grupo-campos">
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" readonly>
+      </div>
+
+      
+      <div class="grupo-campos">
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" readonly>
+      </div>
+      </div>
+
+
+    </div>
+
+
+
+    <script src="./JS/script.js"></script>
+
+  </body>
+</html>
