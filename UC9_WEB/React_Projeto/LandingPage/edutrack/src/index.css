@@ -2,9 +2,11 @@
 .root{
   --cor-primaria: #004ac6;
   --cor-segundaria: #dce9ff;
-  --backgroudi-color: #f8f9ff;
+  --backgroud-color: #f8f9ff;
+  --backgroud-section-destaque: #eff4ff;
   --cor-texto: #434655;
   --cor-branco: #FFFFFF;
+
 
   --fonte-principal: 'Inter';
 
@@ -19,10 +21,30 @@
   box-sizing: border-box;
 }
 
+/* Base do documento */
+
 body{
   font-family: var(--fonte-principal);
   color: var(--cor-texto);
   background-color: var(--backgroudi-color);
   line-height: 1.6; /* Espaçamento entre linhas para melhor leitura*/
 }
+
+/* Utilitarios da Seção */
+
+.secao{
+  padding: 96px 0;  /* Espaçamento interno para melhor leitura*/
+}
+
+.secao-destaque{
+  background-color: var(--backgroud-section-destaque);
+}
+
+.h2{
+  font-size: 3rem; /* 48px */
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 16px;
+}
+
 
