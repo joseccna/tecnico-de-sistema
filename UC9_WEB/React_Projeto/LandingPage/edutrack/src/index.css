@@ -1,0 +1,28 @@
+/* Variaves de esitlo para cores, fontes e outros elelmentos visuais*/
+.root{
+  --cor-primaria: #004ac6;
+  --cor-segundaria: #dce9ff;
+  --backgroudi-color: #f8f9ff;
+  --cor-texto: #434655;
+  --cor-branco: #FFFFFF;
+
+  --fonte-principal: 'Inter';
+
+  --raio-borda: 12px; /* Raio da bora para botões e caixas  (border-radius)*/
+
+}
+
+/* Reset de estilos para garantir consitência entre navegadores*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  background-color: var(--backgroudi-color);
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura*/
+}
+
