@@ -1,0 +1,65 @@
+.hero{
+    padding: 80px 0;
+}
+
+.hero .container{
+margin: 0 auto;
+max-width: 896px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 32px;
+}
+
+.badge{
+    background-color: var(--cor-segundaria);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 20px;
+
+}
+
+h1{
+    font-size: 4.5rem;
+    line-height: 72px;
+    text-align: center;
+
+}
+
+.texto-azul{
+    color: var(--cor-primaria);
+}
+
+.descricao-hero{
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 28px;
+    max-width: 670px;
+  
+}
+
+.btn-filled{
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: 18px 32px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: var(--raio-borda);
+    margin-right: 16px;
+}
+
+.btn-outline{
+    border: 2px solid var(--cor-primaria);
+    background-color: transparent;
+    color: var(--cor-primaria);
+    padding: 18px 32px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: var(--raio-borda);
+    margin-right: 16px;
+}
