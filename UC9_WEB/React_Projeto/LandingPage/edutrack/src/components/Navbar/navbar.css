@@ -1,0 +1,72 @@
+nav{
+    position: sticky;
+    top : 0;
+    z-index: 99999; /*sobreponha o conteudo*/
+    background-color: var(--background-color);
+    border-bottom: 1px solid #ddd;
+
+}
+.navbar .container{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 16px 32px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    letter-spacing: -1px;
+    text-decoration: none;
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: -0.4px;
+    color: var(--cor-texto)
+}
+
+.nav-links li a:hover{
+
+    color: var(--cor-primaria);
+}
+
+.nav-links li a:hover, .link-login:hover {
+   color: var(--cor-primaria);
+}
+
+.btn-comecar{
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border: none;
+    padding: 9.5px 19px;
+    letter-spacing: -0.4px;
+    font-size: 1rem;
+    font-weight: 550;
+    border-radius: var(--raio-borda);
+    cursor: pointer;
+
+
+}
+
+.btn-comecar :hover{
+    background-color: var(--cor-primaria-escura);
+    transition: 0.3s ease;
+}
+

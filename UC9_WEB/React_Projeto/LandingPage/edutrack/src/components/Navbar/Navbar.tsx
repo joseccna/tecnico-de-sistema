@@ -1,3 +1,5 @@
+import './navbar.css';
+
 function Navbar() {
 
     return(
@@ -7,10 +9,10 @@ function Navbar() {
 
                 <ul className="nav-links">
 
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Funcionalidades</a></li>
-                    <li><a href="#">Equipe</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#contato">Contato</a></li>
 
                 </ul>
 

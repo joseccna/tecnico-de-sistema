@@ -1,7 +1,8 @@
 /* Variaves de esitlo para cores, fontes e outros elelmentos visuais*/
-.root{
+:root{
   --cor-primaria: #004ac6;
   --cor-segundaria: #dce9ff;
+  --cor-primaria-escura: #0039a0;
   --backgroud-color: #f8f9ff;
   --backgroud-section-destaque: #eff4ff;
   --cor-texto: #434655;
@@ -10,7 +11,7 @@
 
   --fonte-principal: 'Inter';
 
-  --raio-borda: 12px; /* Raio da bora para botões e caixas  (border-radius)*/
+  --raio-borda: 10px; /* Raio da bora para botões e caixas  (border-radius)*/
 
 }
 
