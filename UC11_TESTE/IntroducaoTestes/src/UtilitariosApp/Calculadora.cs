@@ -35,8 +35,18 @@ namespace UtilitariosApp
 
         }
 
+        // Crie 2 testes: um fato, e uma teoria.
 
+        public double Raiz(int a)
+        {
+            if (a < 0) 
+            {
+                throw new ArgumentException("Não é possível calcular a raiz quadrada de zero ou negativo.");
+            }
+            
 
+            return Math.Sqrt(a);
+        }
 
 
 

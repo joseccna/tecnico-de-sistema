@@ -59,10 +59,58 @@ namespace UtilitariosApp.Tests
 
         }
 
+        [Fact]
+        public void RaizDeveRetornarARaizQuadrada()
+        {
+            Calculadora c1 = new Calculadora();
+            var resultado = c1.Raiz(25);
+            Assert.Equal(5, resultado);
+        }
+
+        [Theory]
+        [InlineData(-1)]
+        [InlineData(-25)]
+        [InlineData(-100)]
+        [InlineData(-1000)]
+        public void Raiz_DeveLancarExcecaoParaNumerosNegativos(int a)
+        {
+            Calculadora c1 = new Calculadora();
+            Assert.Throws<ArgumentException>(() => c1.Raiz(a));
+        }
+
+        [Theory]
+        [InlineData(9, 3)]
+        [InlineData(16, 4)]
+        [InlineData(25, 5)]
+        [InlineData(36, 6)]
+        [InlineData(49, 7)]
+        [InlineData(64, 8)]
+        [InlineData(81, 9)]
+        [InlineData(100, 10)]
+        public void Raiz_DeveRetornarARaizQuadrada(int a, int b)
+        {
+            // Arrange
+            Calculadora c1 = new Calculadora();
+            // Act
+            var resultado = c1.Raiz(a);
+            // Assert
+            Assert.Equal(b, resultado);
+        }
 
 
+        [Fact]
+        public void Raiz_DeUmNumeroNegativo_DeveLancarArgumentException()
+        {
+            // Arrange
+            Calculadora c1 = new Calculadora();
+            int numero = -4;
 
 
+            // Act e Assert são executados juntos, pois esperamos que a exceção seja lançada
+            Assert.Throws<ArgumentException>(() => c1.Raiz(numero));
 
+           // Assert.Equal(0, raziCalculada);
+        }
     }
+
 }
